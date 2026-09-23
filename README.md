@@ -16,20 +16,20 @@ Left alone on purpose:
 
 ## Install
 
-A notarized download is coming to [Releases](../../releases). For now, build it
-(you'll need Xcode or the Command Line Tools):
+Download the zip from [Releases](../../releases), unzip it, drag **Hold Please**
+to Applications and open it. It adds itself to Login Items, then asks for
+**Accessibility** permission — an event tap is how a key gets caught and
+swallowed. Allow it in System Settings → Privacy & Security → Accessibility,
+and it starts watching within a couple of seconds, no relaunch needed.
+
+Or build it yourself (you'll need Xcode or the Command Line Tools). `build.sh`
+installs it to `/Applications` and opens it:
 
 ```sh
 git clone https://github.com/AdamMackey/hold-please.git
 cd hold-please
 ./build.sh
 ```
-
-That builds `Hold Please.app`, puts it in `/Applications`, adds it to Login
-Items and opens it. The first launch asks for **Accessibility** permission —
-an event tap is how a key gets caught and swallowed. Allow it in
-System Settings → Privacy & Security → Accessibility, and it starts watching
-within a couple of seconds, no relaunch needed.
 
 There's no Dock icon and no menu bar icon. Open the app again to reach Quit.
 
